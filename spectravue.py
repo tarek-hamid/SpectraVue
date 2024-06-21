@@ -35,7 +35,6 @@ app = dash.Dash(
 
 app.title = "SpectraVue"
 
-
 # Header
 header = html.Header(
     dbc.Container(
@@ -355,4 +354,4 @@ def generate_graph_spec(spec_clicks, biomarker_clicks, filename, spec_data, comb
             )
         
 if __name__ == '__main__':
-   app.run_server(debug=False)
+   app.run_server(debug=True)
